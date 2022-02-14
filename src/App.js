@@ -1,10 +1,22 @@
 import React from 'react';
 import './css/main.scss';
 
+import Navigation from './components/Navigation';
+
+import About from './sections/About';
+import Projects from './sections/Projects';
+import Hobbies from './sections/Hobbies';
+import Contact from './sections/Contact';
+
+
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <Navigation/>
+      <About/>
+      <Projects/>
+      <Hobbies/>
+      <Contact/>
     </div>
   );
 }

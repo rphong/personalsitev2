@@ -1,5 +1,21 @@
-@import './libs/vars';
+//Reset
 @import '../../node_modules/normalize.css/normalize.css';
 
+//Variables
+@import './libs/vars';
+@import './libs/functions';
+
+//layouts
+@import './layout/base';
+@import './layout/main';
+
+//components
+@import './components/navigation';
+
+//Sections
+@import './sections/about';
+@import './sections/contact';
+@import './sections/hobbies';
+@import './sections/projects';
 
 

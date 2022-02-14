@@ -1,0 +1,14 @@
+#header{
+    display: flex;
+    align-items: center;
+    background-color: _palette(main);
+    
+    margin-bottom: 2em;
+    padding-left: 1em;
+}
+
+#header ul li{
+    display: inline-block;
+    border-right: 1px solid gray;
+    padding: 0 .4em 0;
+}

@@ -1,0 +1,18 @@
+//
+//Text Styles
+//
+
+h1, h2, h3, h4, a{
+    font-family: _font(family);
+}
+
+a{
+    text-decoration: none;
+    border-bottom: none;
+    color:inherit;
+}
+
+body{
+    background: _palette(bg);
+}
+

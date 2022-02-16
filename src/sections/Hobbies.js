@@ -6,7 +6,7 @@ const Hobbies = () => (
 
     <Main>
         <div id="hobbies">
-            <h1>Hobbies</h1>
+            <h1 class="bold">Hobbies</h1>
         </div>
     </Main>
 );

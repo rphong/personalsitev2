@@ -12,6 +12,13 @@
 	@return val($palette, $keys...);
 }
 
+/// Gets a breakpoint value.
+/// @param {string} $keys Key(s).
+/// @return {string} Value.
+@function _breakpoints($keys...) {
+	@return val($breakpoints, $keys...);
+}
+
 //-----------------------------------------------------------------------------------------------------------------
 
 /// Gets a value from a map.

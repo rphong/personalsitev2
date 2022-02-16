@@ -1,7 +1,14 @@
 #main{
     background: _palette(main);
+    box-shadow: 0 5px 5px -3px rgb(182, 182, 182);
 }
 
 #wrapper{
-    padding: 0em 3em;
+    padding: 0em 7em;
+}
+
+@media (max-width:_breakpoints(tablet)) {
+    #wrapper{
+        padding: 0;
+    }
 }

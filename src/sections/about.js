@@ -2,13 +2,11 @@ import React from 'react'
 
 import Main from '../template/Main'
 
-import me from '../img/me.png'
-
 const About = () => (
 
     <Main style={{margin:`5rem 0 0 0`}}>
         <div id="about" >
-            {/* <img src={me} alt="me" id="meImg"></img> */}
+            <img src='/img/me.png' alt="me" id="meImg"></img>
             <h1 class="bold">About Me</h1>
             <h3>
                 Hello! My name is Richard and I'm currently a student at the University of Houston, majoring in CS. I enjoy 

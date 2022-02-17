@@ -25,16 +25,14 @@
         
     width: 30vw;
     height: 100vh;
-    right:0;
+    //Initially hide menu
+    right:-30vw;
     top:0;
     padding-top: 4rem;
     background-color: _palette(main);
-    //Initially hide menu
-    transform: translateX(100%);
 
     z-index: 10;
     box-shadow: 0 5px 10px -0px rgb(182, 182, 182);
-    transition: all 0.5s ease 0s;
 }
 
 #mobileNav li{
@@ -60,6 +58,15 @@
     }
     #mobileNav{
         width: 40vw;
+        right: -40vw;
+    }
+    .slide-in {
+        transition: transform 0.5s !important;
+        transform: translateX(-40vw) !important;
+    }
+    .slide-out {
+        transition: transform 0.5s !important;
+        transform: translateX(40vw) !important;
     }
 };
 
@@ -68,19 +75,11 @@
 //
 
 .slide-in {
-    animation: slide-in 0.5s forwards;
+    transition: transform 0.5s;
+    transform: translateX(-30vw);
 }
 
 .slide-out {
-    animation: slide-out 0.5s forwards;
-}
-    
-@keyframes slide-in {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(0%); }
-}
-    
-@keyframes slide-out {
-    0% { transform: translateX(0%); }
-    100% { transform: translateX(100%); }
+    transition: transform 0.5s;
+    transform: translateX(30vw);
 }

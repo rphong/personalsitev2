@@ -1,3 +1,9 @@
 #projects{
     padding: 1em 3em 1em;
 }
+
+@media (max-width:_breakpoints(tablet)) {
+    #projects{
+        padding: 1em 2em 1em;
+    }
+}

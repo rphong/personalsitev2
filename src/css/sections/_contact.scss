@@ -1,3 +1,18 @@
 #contact{
     padding: 1em 3em 1em;
+
+    a{
+        display: inline-block;
+    }
+}
+
+.icon{
+    height: 2rem;
+    padding: 0.25rem 0.5rem;
+}
+
+@media (max-width:_breakpoints(tablet)) {
+    #contact{
+        padding: 1em 2em 1em;
+    }
 }

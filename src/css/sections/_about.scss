@@ -12,3 +12,9 @@
     float:right;
     margin: 2rem 0 0 2rem;
 }
+
+@media (max-width:_breakpoints(tablet)) {
+    #about{
+        padding: 1em 2em 1em;
+    }
+}

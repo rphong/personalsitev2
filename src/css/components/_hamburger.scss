@@ -61,11 +61,11 @@
         right: -40vw;
     }
     .slide-in {
-        transition: transform 0.5s !important;
+        transition: transform 1s !important;
         transform: translateX(-40vw) !important;
     }
     .slide-out {
-        transition: transform 0.5s !important;
+        transition: transform 1s !important;
         transform: translateX(40vw) !important;
     }
 };
@@ -75,11 +75,11 @@
 //
 
 .slide-in {
-    transition: transform 0.5s;
+    transition: transform 1s ease;
     transform: translateX(-30vw);
 }
 
 .slide-out {
-    transition: transform 0.5s;
+    transition: transform 1s ease;
     transform: translateX(30vw);
 }

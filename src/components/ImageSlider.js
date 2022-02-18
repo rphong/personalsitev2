@@ -18,7 +18,7 @@ const ImageSlider = () => {
 
     return (//add title as another div in image gallery
         <div id="imgGallery">
-            <AiOutlineArrowLeft className='leftArrow' size='2x' onClick={prevSlide}/>
+            <AiOutlineArrowLeft className='leftArrow' size={'2x'} onClick={prevSlide}/>
             {projectData.map((slide, index) => {
                 return (
                     <div id='singleSlide' className={index === current ? 'slideActive' : 'slideSwitch'}>
@@ -36,7 +36,7 @@ const ImageSlider = () => {
                     </div>
                 );
             })}
-            <AiOutlineArrowRight className='rightArrow' size='2x' onClick={nextSlide}/>
+            <AiOutlineArrowRight className='rightArrow' size={'2x'} onClick={nextSlide}/>
         </div>
     );
 }

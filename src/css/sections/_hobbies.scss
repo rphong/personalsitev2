@@ -1,3 +1,71 @@
 #hobbies{
     padding: 1em 3em 1em;
+
+    h3 {
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;  
+            
+            border: 1px solid _palette(lightBorder);
+            box-shadow: 2px 3px 3px -3px _palette(shadow);
+
+            li{
+                display: inline-block;
+                padding: 0.25rem 0.5rem;
+            }
+        }
+
+    }
 }
+
+#origamiGallery
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    box-shadow: 2px 5px 5px -3px _palette(shadow);
+    border: 1px solid _palette(lightBorder);
+
+    padding: 1rem;
+    margin: 1rem 0;
+    img{
+        height: 7rem;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+}
+
+@media (max-width:_breakpoints(tablet)) {
+    #hobbies{
+        padding: 1em 2em 1em;
+        h3 ul{
+            li{
+                font-size: .8rem;
+            }
+        }
+    }
+    #origamiGallery{
+        img{
+            height: 5.5rem;
+        }
+    }
+};
+
+@media (max-width:_breakpoints(mobileL)) {
+    #hobbies{
+        padding: 1em 2em 1em;
+        h3 ul{
+            display: inline-block;
+            li{
+                font-size: .8rem;
+            }
+        }
+    }
+    #origamiGallery{
+        img{
+            height: 4rem;
+        }
+    }
+};

@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     background-color: _palette(main);
-    box-shadow: 0 5px 5px -3px rgb(182, 182, 182);
+    box-shadow: 0 5px 5px -3px _palette(shadow);
 
     position: fixed;
     top: 0;

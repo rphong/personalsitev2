@@ -1,6 +1,6 @@
-import leagueSite from '../img/leagueSite.png';
-import NFTeach from '../img/NFTeach.png';
-import tetrisRemake from '../img/tetrisRemake.png';
+import leagueSite from '../resources/img/projects/leagueSite.png';
+import NFTeach from '../resources/img/projects/NFTeach.png';
+import tetrisRemake from '../resources/img/projects/tetrisRemake.png';
 
 export const projectData = [
     {

@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-import Main from '../template/Main'
-import Me from '../img/me.png'
+import Main from '../template/Main';
+import Me from '../resources/img/me.png';
 
 const About = () => (
 

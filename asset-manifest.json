@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/personalsitev2/static/css/main.89c0ab42.css",
+    "main.js": "/personalsitev2/static/js/main.c8091bc6.js",
+    "index.html": "/personalsitev2/index.html",
+    "main.89c0ab42.css.map": "/personalsitev2/static/css/main.89c0ab42.css.map",
+    "main.c8091bc6.js.map": "/personalsitev2/static/js/main.c8091bc6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89c0ab42.css",
+    "static/js/main.c8091bc6.js"
+  ]
+}

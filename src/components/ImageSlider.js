@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {projectData} from '../data/projectData';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
+
 const ImageSlider = () => {
 
     const[current, setCurrent] = useState(0);

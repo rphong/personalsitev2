@@ -5,7 +5,7 @@ import Main from '../template/Main'
 
 const Projects = () => (
 
-    <Main>
+    <Main >
         <div id="projects">
             <h1 class="bold">Projects</h1>
             <ImageSlider/>

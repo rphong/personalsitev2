@@ -4,7 +4,7 @@ import Main from '../template/Main'
 
 const About = () => (
 
-    <Main style={{margin:`5rem 0 0 0`}}>
+    <Main style={{margin:'5rem 0 0 0'}}>
         <div id="about" >
             <img src='/img/me.png' alt="me" id="meImg"></img>
             <h1 class="bold">About Me</h1>

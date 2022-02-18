@@ -19,14 +19,14 @@
 #laptopNav{
     margin-left: 1rem;
     padding-left: 1rem;
-    border-left: 1px solid rgba(221, 217, 217, 0.555);
+    border-left: 1px solid _palette(lightBorder);
 }
 
 #laptopNav li{
     display: inline-block;
     color: _palette(secondaryTxt);
     line-height: 1;
-    border-right: 1px solid rgba(219, 216, 216, 0.555);
+    border-right: 1px solid _palette(lightBorder);
     padding: 0 .4em 0;
 }
 

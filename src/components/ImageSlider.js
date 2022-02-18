@@ -15,14 +15,22 @@ const ImageSlider = () => {
         setCurrent(current === 0 ? length - 1 : current -1);
     };
 
-    return (
+    return (//add title as another div in image gallery
         <div id="imgGallery">
             <AiOutlineArrowLeft className='leftArrow' size='2x' onClick={prevSlide}/>
             {projectData.map((slide, index) => {
                 return (
-                    <div id='singleSlide'>
+                    <div id='singleSlide' className={index === current ? 'slideActive' : 'slideSwitch'}>
                         {index === current && (
-                            <a href={slide.link} target='_blank'><img src={slide.path} alt='error'/></a>
+                            <a href={slide.link} target='_blank' rel="noreferrer">
+                                <div id='description'>
+                                    <h2>{slide.description}</h2>
+                                </div>
+                                <div id='imgTitle'>
+                                    <h1>{slide.title}</h1>
+                                </div>
+                                <img src={slide.path} alt='error'/>
+                            </a>
                         )}
                     </div>
                 );

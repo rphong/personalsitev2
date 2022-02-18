@@ -1,7 +1,9 @@
 $palette: (
     bg: #f3f2f2,
     main: #ffffff,
-    secondaryTxt: #575757
+    secondaryTxt: #575757,
+    lightBorder: #ddd9d98e,
+    darkBorder: #9c9c9cb4,
 );
 
 $font: (
@@ -11,6 +13,6 @@ $font: (
 );
 
 $breakpoints: (
-    tablet: 768px,
-    mobileL: 425px
+    tablet: 769px,
+    mobileL: 426px
 );

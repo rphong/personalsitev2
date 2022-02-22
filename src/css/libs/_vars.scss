@@ -5,16 +5,28 @@ $palette: (
     lightBorder: #ddd9d98e,
     darkBorder: #9c9c9cb4,
     shadow: #b6b6b6,
-    
+    aboutBG: #b9e769,
+    projectsBG: #83e377,
+    hobbiesBG: #16db93,
+    contactBG: #0db39e,
+    navBG: #efea5a,
 );
 
 $font: (
     family: ('Raleway'),
     weight: 100,
-    weight-bold: 500
+    weight-bold: 700,
 );
 
 $breakpoints: (
+    laptop: 1441px,
     tablet: 769px,
-    mobileL: 426px
+    mobileL: 426px,
+);
+
+$waveHeights: (
+    desktop: 450px,
+    laptop: 300px,
+    tablet: 250px,
+    mobileL: 150px,
 );

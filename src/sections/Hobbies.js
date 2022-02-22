@@ -6,6 +6,7 @@ import Boxes from '../resources/img/origami/boxes.jpg';
 import Butterflies from '../resources/img/origami/butterflies.jpg';
 import Hummingbird from '../resources/img/origami/hummingbird.jpg';
 import Torus from '../resources/img/origami/torus.jpg';
+import Wave from '../components/Wave';
 
 const Hobbies = () => (
 
@@ -34,6 +35,7 @@ const Hobbies = () => (
 
             </h3>
         </div>
+        <Wave class='wave waveHobbies'/>
     </Main>
 );
 

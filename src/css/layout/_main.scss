@@ -1,14 +1,29 @@
-#main{
-    background: _palette(main);
-    box-shadow: 0 5px 5px -3px rgb(182, 182, 182);
+#wrapper{
+    position: block;
+    margin-top: 5rem;
 }
 
-#wrapper{
-    padding: 0em 6em;
+.waveDiv{
+    overflow: hidden;
+    height: _waveHeight(desktop);
+    margin-bottom: -(_waveHeight(laptop));
+}
+
+
+@media (max-width:_breakpoints(laptop)) {
+    .waveDiv{
+        height: _waveHeight(laptop);
+    }
 }
 
 @media (max-width:_breakpoints(tablet)) {
-    #wrapper{
-        padding: 0;
+    .waveDiv{
+        height: _waveHeight(tablet);
+    }
+}
+
+@media (max-width:_breakpoints(mobileL)) {
+    .waveDiv{
+        height: _waveHeight(mobileL);
     }
 }

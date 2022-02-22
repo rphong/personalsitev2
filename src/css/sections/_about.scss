@@ -1,5 +1,14 @@
 #about {
     padding: 1em 3em 1em;
+    margin-bottom: -0.5rem;
+    background: _palette(aboutBG);
+    overflow: auto;
+}
+
+.waveAbout{
+    path{
+        fill: _palette(aboutBG);
+    }
 }
 
 #meImg{

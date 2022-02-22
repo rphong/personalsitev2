@@ -4,11 +4,12 @@
 
 h1, h2, h3, h4, a{
     font-family: _font(family);
-    font-weight: 400;
+    font-weight: 500;
+    color: white;
 }
 
 h1{
-    font-size: 1.5rem;
+    font-size: 3rem;
 }
 
 h2{
@@ -27,7 +28,6 @@ a{
     font-size: 1rem;
     text-decoration: none;
     border-bottom: none;
-    color:inherit;
 }
 
 .bold{
@@ -44,7 +44,7 @@ ul{
 }
 
 body{
-    background: _palette(bg);
+    background: _palette(main);
     line-height: 1.5rem;
 }
 
@@ -54,6 +54,14 @@ body{
 
 html{
     scroll-behavior: smooth;
+}
+
+.wave{
+    width: 100%;
+    height: 100%;
+    path{
+        stroke: none;
+    }
 }
 
 //prevent highlighting image

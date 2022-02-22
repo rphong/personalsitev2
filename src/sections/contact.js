@@ -7,7 +7,7 @@ import { RiNewspaperLine } from "react-icons/ri";
 
 const Contact = () => (
 
-    <Main style={{margin:'0 0 3rem 0'}}>
+    <Main>
         <div id="contact">
             <h1 class="bold">Contact</h1>
             <h3>You can email me at richard.phong424@gmail.com!</h3>

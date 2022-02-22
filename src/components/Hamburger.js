@@ -1,5 +1,6 @@
 import React, {useState, useRef, useEffect} from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IconContext } from "react-icons";
 
 const Hamburger = () => {
 
@@ -39,17 +40,19 @@ const Hamburger = () => {
           document.removeEventListener("mousedown", checkClick)
         }
     })
-    
+
     return (
-        <div id="hamburgerMenu" >
-            <div id="hamburgerIcon" ref={iconRef} ><GiHamburgerMenu size='35%'/></div>
-                <ul id="mobileNav" ref={dropDownRef} className={`${openClass}`}>
-                    <li><a onClick={() => changeState()} href="#about">About Me</a></li>
-                    <li><a onClick={() => changeState()} href="#projects">Projects</a></li>
-                    <li><a onClick={() => changeState()} href="#hobbies">Hobbies</a></li>
-                    <li><a onClick={() => changeState()} href="#contact">Contact</a></li>
-                </ul>
-        </div>
+        <IconContext.Provider value={{ color: 'white', size: '35%' }}>
+            <div id="hamburgerMenu" >
+                <div id="hamburgerIcon" ref={iconRef} ><GiHamburgerMenu/></div>
+                    <ul id="mobileNav" ref={dropDownRef} className={`${openClass}`}>
+                        <li><a onClick={() => changeState()} href="#about">About Me</a></li>
+                        <li><a onClick={() => changeState()} href="#projects">Projects</a></li>
+                        <li><a onClick={() => changeState()} href="#hobbies">Hobbies</a></li>
+                        <li><a onClick={() => changeState()} href="#contact">Contact</a></li>
+                    </ul>
+            </div>
+        </IconContext.Provider>
     );
 };
 

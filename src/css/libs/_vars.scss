@@ -1,10 +1,10 @@
 $palette: (
     bg: #f3f2f2,
     main: #ffffff,
-    secondaryTxt: #575757,
+    baseText: #303030,
     lightBorder: #ddd9d98e,
     darkBorder: #9c9c9cb4,
-    shadow: #b6b6b6,
+    shadow: #8a8861,
     aboutBG: #b9e769,
     projectsBG: #83e377,
     hobbiesBG: #16db93,
@@ -14,8 +14,8 @@ $palette: (
 
 $font: (
     family: ('Raleway'),
-    weight: 100,
-    weight-bold: 700,
+    weight: 400,
+    weight-bold: 600,
 );
 
 $breakpoints: (
@@ -25,8 +25,7 @@ $breakpoints: (
 );
 
 $waveHeights: (
-    desktop: 450px,
-    laptop: 300px,
+    laptop: 275px,
     tablet: 250px,
-    mobileL: 150px,
+    mobileL: 225px,
 );

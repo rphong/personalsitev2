@@ -12,8 +12,10 @@
 }
 
 #meImg{
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    shape-outside: circle();
     object-fit: cover;
 
     box-shadow: 2px 5px 5px -2px rgb(182, 182, 182);
@@ -25,5 +27,19 @@
 @media (max-width:_breakpoints(tablet)) {
     #about{
         padding: 1em 2em 1em;
+    }
+    #meImg{
+        width: 175px;
+        height: 175px;
+        margin: 1em 0 0 1em;
+
+    }
+}
+
+@media (max-width:_breakpoints(mobileL)) {
+    #meImg{
+        width: 100px;
+        height: 100px;
+        margin: 1em 0 0 1em;
     }
 }

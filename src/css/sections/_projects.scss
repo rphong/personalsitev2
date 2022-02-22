@@ -1,6 +1,6 @@
 #projects{
-    padding: 10em 3em 1em;
-    margin: -5rem 0 -0.5rem;
+    padding: 5em 3em 1em;
+    margin: 0rem 0 -0.5rem;
     background: _palette(projectsBG);
     
 }
@@ -13,6 +13,7 @@
 
 @media (max-width:_breakpoints(tablet)) {
     #projects{
-        padding: 10em 2em 1em;
+        padding: 5em 2em 1em;
+        margin: 0rem 0 -0.5rem;
     }
 }

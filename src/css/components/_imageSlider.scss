@@ -11,7 +11,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 5px 5px 5px -2px _palette(shadow);
 }
 
 #singleSlide a{
@@ -27,6 +26,8 @@
     object-fit: cover;
     height: inherit;
     width: 100%;
+    border: 2px solid _palette(baseText);
+    @include inner-border;
 }
 
 .leftArrow{
@@ -63,15 +64,16 @@
 
 #imgTitle{
     background-color: _palette(main);
-    border: 1px solid _palette(darkBorder);
+    border: 2px solid _palette(baseText);
     @include inner-border;
 
-    height: 3rem;
+    height: 4rem;
     width: 100%;
-    top: -3rem;
+    top: -3.9rem;
     position: absolute;
 
     h1{
+        font-size: 1.5rem;
         padding-left: 1rem;
         @include no-select;
     }
@@ -84,14 +86,17 @@
 #description{
     position:absolute;
     z-index: 100;
+    width: 100%;
     height: 100%;
-    padding: .5rem 1rem;
-    background-color: _palette(main);
+    background-color: _palette(projectsBG);
 
     transition: opacity 0.25s;
     opacity: 0;
     &:hover{
         opacity: 0.9;
+    }
+    h2{
+        padding: 1rem 0 0 1rem;
     }
 }
 
@@ -125,6 +130,8 @@
         width: 65vw;
     }
     #imgTitle{
+        height: 3rem;
+        top: -2.9rem;
         h1{
             font-size: 1rem;
         }

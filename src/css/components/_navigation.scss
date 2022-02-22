@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     background-color: _palette(navBG);
-    box-shadow: 0 5px 5px -3px _palette(shadow);
+    box-shadow: 0 5px 5px -3px -palette(shadow);
 
     position: fixed;
     top: 0;
@@ -17,6 +17,7 @@
 
     a{
         font-weight: _font(weight-bold);
+        font-family: _font(family);
     }
 }
 

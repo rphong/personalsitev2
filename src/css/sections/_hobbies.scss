@@ -1,5 +1,5 @@
 #hobbies{
-    padding: 10em 3em 1em;
+    padding: 5em 3em 1em;
     background: _palette(hobbiesBG);
 
     h3 {
@@ -8,9 +8,10 @@
             align-items: center;
             justify-content: space-evenly;  
             
-            border: 3px solid _palette(lightBorder);
+            border: 1px solid _palette(baseText);
 
             li{
+                font-weight: _font(weight-bold);
                 display: inline-block;
                 padding: 0.25rem 0.5rem;
             }
@@ -31,7 +32,7 @@
     align-items: center;
     justify-content: space-evenly;
 
-    border: 3px solid _palette(lightBorder);
+    border: 1px solid _palette(baseText);
 
     padding: 1rem;
     margin: 1rem 0;
@@ -44,7 +45,7 @@
 
 @media (max-width:_breakpoints(tablet)) {
     #hobbies{
-        padding: 10em 2em 1em;
+        padding: 7em 2em 1em;
         h3 ul{
             li{
                 font-size: .8rem;
@@ -60,7 +61,7 @@
 
 @media (max-width:_breakpoints(mobileL)) {
     #hobbies{
-        padding: 10em 2em 1em;
+        padding: 5em 2em 1em;
         h3 ul{
             display: inline-block;
             li{

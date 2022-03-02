@@ -1,18 +1,24 @@
 .waveDiv{
-
-    overflow: hidden;
-    height: _waveHeight(laptop);
-    margin-bottom: -(_waveHeight(laptop));
+    margin-top: 3rem;
+    margin-bottom: -1rem;
 }
 
-@media (max-width:_breakpoints(tablet)) {
-    .waveDiv{
-        height: _waveHeight(tablet);
-    }
+#wave{
+    transform:rotate(0deg); 
+    transition: 0.3s;
 }
 
-@media (max-width:_breakpoints(mobileL)) {
-    .waveDiv{
-        height: _waveHeight(mobileL);
-    }
+#path1{
+    transform:translate(0, 0px); 
+    opacity:1;
+}
+
+#path2{
+    transform:translate(0, 50px); 
+    opacity:1;
+}
+
+#path3{
+    transform:translate(0, 100px); 
+    opacity:1;
 }

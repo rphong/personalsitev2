@@ -19,14 +19,6 @@
 	@return val($breakpoints, $keys...);
 }
 
-/// Gets a wave height value.
-/// @param {string} $keys Key(s).
-/// @return {string} Value.
-@function _waveHeight($keys...) {
-	@return val($waveHeights, $keys...);
-}
-
-
 
 //-----------------------------------------------------------------------------------------------------------------
 

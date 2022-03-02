@@ -1,9 +1,21 @@
 #contact{
     padding: 5em 3em 1em;
-    background: _palette(contactBG);
+    background: _palette(main);
 
     a{
         display: inline-block;
+    }
+
+    h1{
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -5px; left: 0;
+            width: 80px;
+            height: 5px;
+            background-color: _palette(mainGreen);
+          }
     }
 }
 

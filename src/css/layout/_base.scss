@@ -9,7 +9,7 @@ h1, h2, h3, h4, a{
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 h2{
@@ -38,6 +38,9 @@ a{
     h1{
         font-size: 2.5rem;
     }
+    h3{
+        font-size: 0.8rem;
+    }
 }
 
 //
@@ -52,6 +55,7 @@ ul{
 body{
     background: _palette(main);
     line-height: 1.5rem;
+    max-width: 100%;
     h1{
         line-height: 2.5rem;
     }

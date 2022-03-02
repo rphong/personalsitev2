@@ -2,30 +2,23 @@ $palette: (
     bg: #f3f2f2,
     main: #ffffff,
     baseText: #303030,
-    lightBorder: #ddd9d98e,
-    darkBorder: #9c9c9cb4,
-    shadow: #8a8861,
-    aboutBG: #b9e769,
-    projectsBG: #83e377,
-    hobbiesBG: #16db93,
-    contactBG: #0db39e,
-    navBG: #efea5a,
+    lightBorder: #6866665b,
+    shadow: #91918a,
+    mainGreen:#99ECCE,
+    brightGreen: #37D99E,
+    mainBlue: #5FC3EE,
+    lighterBlue: #9BDBF2,
 );
 
 $font: (
     family: ('Raleway'),
-    weight: 400,
-    weight-bold: 600,
+    weight: 200,
+    weight-bold: 400,
 );
 
 $breakpoints: (
     laptop: 1441px,
+    laptopS: 1025px,
     tablet: 769px,
     mobileL: 426px,
-);
-
-$waveHeights: (
-    laptop: 275px,
-    tablet: 250px,
-    mobileL: 225px,
 );

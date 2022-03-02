@@ -3,7 +3,7 @@ import Hamburger from './Hamburger';
 
 const Navigation = () => (
     <header id="header">
-        <a href="/">Richard Phong</a>
+        <a href="#about">Richard Phong</a>
         <nav>
             <ul id="laptopNav">
                 <li><a href="#about">About Me</a></li>

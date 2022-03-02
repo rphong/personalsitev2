@@ -30,9 +30,8 @@ const ImageSlider = () => {
                                         <h2>{slide.description}</h2>
                                     </div>
                                     <div id='imgTitle'>
-                                        <h1>{slide.title}</h1>
+                                        <h2>{slide.title}</h2>
                                     </div>
-                                    <img src={slide.path} alt='error'/>
                                 </a>
                             )}
                         </div>

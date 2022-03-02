@@ -1,29 +1,5 @@
 #wrapper{
     position: block;
-    margin-top: 5rem;
+    
 }
 
-.waveDiv{
-    overflow: hidden;
-    height: _waveHeight(desktop);
-    margin-bottom: -(_waveHeight(laptop));
-}
-
-
-@media (max-width:_breakpoints(laptop)) {
-    .waveDiv{
-        height: _waveHeight(laptop);
-    }
-}
-
-@media (max-width:_breakpoints(tablet)) {
-    .waveDiv{
-        height: _waveHeight(tablet);
-    }
-}
-
-@media (max-width:_breakpoints(mobileL)) {
-    .waveDiv{
-        height: _waveHeight(mobileL);
-    }
-}

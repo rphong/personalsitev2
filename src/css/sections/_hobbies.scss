@@ -1,6 +1,6 @@
 #hobbies{
-    padding: 5em 3em 1em;
-    background: _palette(hobbiesBG);
+    padding: 1em 3em 1em;
+    background: _palette(main);
 
     h3 {
         ul{
@@ -18,11 +18,23 @@
         }
 
     }
+
+    h1{
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -5px; left: 0;
+            width: 100px;
+            height: 5px;
+            background-color: _palette(mainGreen);
+          }
+    }
 }
 
 .waveHobbies {
     path{
-        fill: _palette(hobbiesBG);
+        fill: _palette(main);
     }
 }
 
@@ -45,7 +57,7 @@
 
 @media (max-width:_breakpoints(tablet)) {
     #hobbies{
-        padding: 7em 2em 1em;
+        padding: 1em 2em 1em;
         h3 ul{
             li{
                 font-size: .8rem;

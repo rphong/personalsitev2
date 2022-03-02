@@ -1,19 +1,60 @@
 #projects{
-    padding: 5em 3em 1em;
+    position: relative;
+    padding: 1em 3em 1em;
     margin: 0rem 0 -0.5rem;
-    background: _palette(projectsBG);
+    background: _palette(bg);
     
+    h1{
+        margin: 0 0 7rem;
+        font-size: 1.75rem;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+    #subtitle{
+        text-align: center;
+        text-decoration: underline _palette(mainGreen) 5px;
+        text-decoration-skip-ink: none;
+        margin: 5rem 0 1rem;
+    }
 }
 
 .waveProjects {
     path{
-        fill: _palette(projectsBG);
+        fill: _palette(main);
     }
 }
 
 @media (max-width:_breakpoints(tablet)) {
     #projects{
-        padding: 5em 2em 1em;
+        padding: 1em 2em 1em;
         margin: 0rem 0 -0.5rem;
     }
+}
+
+@media (max-width:_breakpoints(mobileL)) {
+    #projects{
+        h1{
+            font-size: 1.75rem;
+        }
+    }
+}
+
+#block{
+    height: 10vh;
+    width: 100%;
+    background-image: linear-gradient(-20deg, _palette(mainBlue), _palette(mainGreen));
+}
+
+//
+//Circles
+//
+.circle2{ 
+    top: 1rem;
+    right: 1rem;
+}
+
+.circle3{ 
+    bottom: 1rem;
+    left: 0rem;
 }

@@ -42,7 +42,7 @@ const Hamburger = () => {
     })
 
     return (
-        <IconContext.Provider value={{ color: 'white', size: '35%' }}>
+        <IconContext.Provider value={{ color: 'black', size: '35%' }}>
             <div id="hamburgerMenu" >
                 <div id="hamburgerIcon" ref={iconRef} ><GiHamburgerMenu/></div>
                     <ul id="mobileNav" ref={dropDownRef} className={`${openClass}`}>

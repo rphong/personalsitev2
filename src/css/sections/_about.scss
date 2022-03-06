@@ -35,7 +35,7 @@
     top:1rem;
     left: 1rem;
     background-image: linear-gradient(-45deg, _palette(mainBlue) 0%,  _palette(mainGreen) 70%);
-    
+    z-index: 2;
 }
 
 #meImg{
@@ -45,7 +45,7 @@
     position: relative;
     
     position: relative;
-    z-index: 1;
+    z-index: 10;
 }
 
 @media (max-width:_breakpoints(tablet)) {
@@ -89,7 +89,3 @@
 //
 //Circle
 //
-.circle1{ 
-    top:-6rem;
-    left: -3rem;
-}

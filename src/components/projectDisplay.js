@@ -7,9 +7,9 @@ const projectDisplay = () => {
 
     return (
             <div id="imgGallery">
-                {projectData.map((slide) => {
+                {projectData.map((slide, index) => {
                     return (
-                        <div id='singleSlide'>
+                        <div id='singleSlide' key={index}>
                             <div id='slideContent'>
                                 <h2>{slide.title}</h2>
                                 <h3>{slide.description}</h3>

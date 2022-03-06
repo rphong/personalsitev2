@@ -1,6 +1,26 @@
 .circleDiv{
     position: absolute;
-    z-index: 0;
+    z-index: 1;
     opacity: 0.5;
     overflow: hidden;
+}
+
+.circle1{ 
+    top:-6rem;
+    left: -3rem;
+}
+
+.circle2{ 
+    top: 20rem;
+    right: 1rem;
+}
+
+.circle3{ 
+    bottom: 1rem;
+    left: 0rem;
+}
+
+.circle4{ 
+    bottom: 5rem;
+    right: -2vw;
 }

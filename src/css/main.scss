@@ -9,13 +9,14 @@
 //layouts
 @import './layout/base';
 @import './layout/main';
+@import './layout/parallaxBg';
 
 //components
 @import './components/hamburger';
-@import './components/navigation';
 @import './components/projectDisplay';
 @import './components/wave';
 @import './components/circleDec';
+@import './components/models';
 
 //Sections
 @import './sections/about';

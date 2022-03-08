@@ -1,0 +1,94 @@
+#origamiGallery
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1rem;
+    margin: 1rem 0;
+
+    
+    #origamiImgContainer{
+        width: 30vw;
+        height: 30vw;
+        position: relative;
+    }
+    #origamiImg{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        box-shadow:0 0 20px -5px _palette(shadow);
+        
+        z-index: 10;
+    }
+    #origamiImgBg{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:1rem;
+        left: 1rem;
+        background-image: linear-gradient(-45deg, _palette(mainBlue) 0%,  _palette(mainGreen) 70%);
+        z-index: 2;
+    }
+
+    .right{
+        align-self: flex-end;
+        margin-left: 5rem;
+    }
+    .left{
+        align-self: flex-start;
+        margin-right: 5rem;
+
+    }
+
+    #singleSection{
+        display: flex;
+        align-items: center;
+    }
+    #sectionDescription{
+        h2{
+            text-decoration: underline _palette(mainBlue) 3px;
+            text-decoration-skip-ink: none;
+        }
+        max-width: 40vw;
+        padding: 1rem;
+
+        a{
+            text-decoration: underline _palette(lighterBlue) 2px;
+            color: _palette(shadow);
+        }
+    }
+}
+
+//
+//Media queries
+//
+
+
+@media (max-width:_breakpoints(tablet)) {
+    #singleSection{
+        flex-direction: column;
+        align-items: center;
+
+        #sectionDescription{
+            margin:1rem;
+            max-width: 70vw;
+        }
+        #origamiImgBg{
+            width: 95%;
+            height: 100%;
+            position: absolute;
+            top: 0.5rem;
+            left: 0.5rem;
+            background-image: linear-gradient(270deg, _palette(mainBlue) 0%,  _palette(mainGreen) 70%);
+        }
+
+        .right{
+            align-self: center;
+        }
+        .left{
+            align-self: center;
+        }
+    }
+};

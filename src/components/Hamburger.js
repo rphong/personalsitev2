@@ -1,4 +1,4 @@
-import React, {useState, useRef, useEffect} from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IconContext } from "react-icons";
 
@@ -17,10 +17,10 @@ const Hamburger = () => {
     const changeClass = () => {
         //reason for !open is that useState is async and idk how to handle that yet, somehow use await toggleopen?
         toggleClass(() => !open ? 'slide-in' : 'slide-out');
-    }   
+    }
 
     useEffect(() => {
-        
+
 
         const checkClick = e => {
             //if clicked outside, close
@@ -28,7 +28,7 @@ const Hamburger = () => {
                 changeState();
             }
             //if not open and icon clicked, open
-            else if(!open && iconRef.current.contains(e.target)) {
+            else if (!open && iconRef.current.contains(e.target)) {
                 changeState();
             }
 
@@ -37,20 +37,20 @@ const Hamburger = () => {
         document.addEventListener("mousedown", checkClick)
         //cleanup
         return () => {
-          document.removeEventListener("mousedown", checkClick)
+            document.removeEventListener("mousedown", checkClick)
         }
     })
 
     return (
         <IconContext.Provider value={{ color: 'black', size: '35%' }}>
             <div id="hamburgerMenu" >
-                <div id="hamburgerIcon" ref={iconRef} ><GiHamburgerMenu/></div>
-                    <ul id="mobileNav" ref={dropDownRef} className={`${openClass}`}>
-                        <li><a onClick={() => changeState()} href="#about">About Me</a></li>
-                        <li><a onClick={() => changeState()} href="#projects">Projects</a></li>
-                        <li><a onClick={() => changeState()} href="#hobbies">Hobbies</a></li>
-                        <li><a onClick={() => changeState()} href="#contact">Contact</a></li>
-                    </ul>
+                <div id="hamburgerIcon" ref={iconRef} ><GiHamburgerMenu /></div>
+                <ul id="mobileNav" ref={dropDownRef} className={`${openClass}`}>
+                    <li><a onClick={() => changeState()} href="#about">About Me</a></li>
+                    <li><a onClick={() => changeState()} href="#projects">Projects</a></li>
+                    <li><a onClick={() => changeState()} href="#hobbies">Hobbies</a></li>
+                    <li><a onClick={() => changeState()} href="#contact">Contact</a></li>
+                </ul>
             </div>
         </IconContext.Provider>
     );

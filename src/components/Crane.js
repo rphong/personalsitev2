@@ -10,11 +10,11 @@ const Dice = (props) => {
         const { nodes, materials } = useGLTF(origamiCrane);
         useFrame((state) => {
             const t = state.clock.getElapsedTime();
-            group.current.rotation.x = Math.cos(t / 2) / 10 + 1;
-            group.current.rotation.y = Math.sin(t / 2) / 10 + 4;
+            group.current.rotation.x = Math.cos(t / 2) / 7 + 0.8;
+            group.current.rotation.y = Math.sin(t / 2) / 7 + 3.6;
         })
         return (
-            <group ref={group} {...Modelprops} dispose={null} position={[props.x, props.y, props.z]}>
+            <group ref={group} {...Modelprops} dispose={null} position={[0, 0, 0]}>
                 <mesh
                     castShadow
                     receiveShadow
@@ -31,9 +31,9 @@ const Dice = (props) => {
 
     return (
         <div className={"modelDiv " + props.className}>
-            <Canvas pixelRatio={window.devicePixelRatio}>
+            <Canvas pixelRatio={window.devicePixelRatio} >
                 <ambientLight intensity={0.5} />
-                <pointLight position={[props.x + 10, props.y + 10, props.z + 10]} intensity={0.5} />
+                <pointLight position={[10, 10, 10]} intensity={0.5} />
                 <Suspense fallback={null}>
                     <Model />
                 </Suspense>

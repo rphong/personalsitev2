@@ -60,6 +60,11 @@
     h1{
         font-size: 2.25rem;
     }
+            
+    h2{
+        margin-top: 0rem !important;
+        font-size: 1.0rem;
+    }
 }
 
 @media (max-width:_breakpoints(mobileL)) {
@@ -78,11 +83,7 @@
                 width: 100px !important;
             }
         }
-        
-        h2{
-            margin-top: 0rem !important;
-            font-size: 1.0rem;
-        }
+
     }   
 }
 

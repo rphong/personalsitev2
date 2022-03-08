@@ -1,33 +1,27 @@
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 import Main from '../template/Main';
-
-import Boxes from '../resources/img/origami/boxes.jpg';
-import Butterflies from '../resources/img/origami/butterflies.jpg';
-import Hummingbird from '../resources/img/origami/hummingbird.jpg';
-import Torus from '../resources/img/origami/torus.jpg';
+import OrigamiDisplay from '../components/origamiDisplay';
 import Crane from '../components/Crane';
 
 
-const Hobbies = () => (
+const Hobbies = () => {
 
-    <Main>
-        <div id="hobbies">
-            <Crane x={-5} y ={4} z={-5}/>
+    const isMobile = useMediaQuery({ query: '(max-width: 769px)' });
+    const isLaptop = useMediaQuery({ query: '(min-width: 1024px)'})
 
-            <h1 className="bold">Hobbies</h1>
-            <h3>
-                In my free time, I do a mix of video games, origami, and occasional badminton! <br/>
-                <div id="origamiGallery">
-                    <img src={Boxes} alt='boxes'></img>
-                    <img src={Butterflies} alt='butterflies'></img>
-                    <img src={Hummingbird} alt='hummingbird'></img>
-                    <img src={Torus} alt='torus'></img>
-                </div>
+    return (
+        <Main>
+            <div id="hobbies">
+                {isLaptop && <Crane className="Crane1" />}
 
-            </h3>
-        </div>
-    </Main>
-);
+                <h2 id="title">HOBBIES</h2>
+                <h1 id="subtitle" className="bold">My Orgami Gallery!</h1>
+                <OrigamiDisplay mobile={isMobile} />
+            </div>
+        </Main>
+    );
+};
 
 export default Hobbies;

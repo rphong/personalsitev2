@@ -4,19 +4,6 @@
     margin: 0rem 0 -0.5rem;
     background: _palette(bg);
     
-    h1{
-        margin: 0 0 7rem;
-        font-size: 1.75rem;
-        text-align: center;
-        position: relative;
-        z-index: 1;
-    }
-    #subtitle{
-        text-align: center;
-        text-decoration: underline _palette(mainGreen) 5px;
-        text-decoration-skip-ink: none;
-        margin: 5rem 0 1rem;
-    }
 }
 
 .waveProjects {
@@ -41,7 +28,7 @@
 }
 
 #block{
-    height: 10vh;
+    height: 20vh;
     width: 100%;
     background-image: linear-gradient(-20deg, _palette(mainBlue), _palette(mainGreen));
 }

@@ -8,16 +8,14 @@ const Projects = () => (
     <Main >
 
         <div id="projects">
-            <h2 id="subtitle">PROJECTS</h2>
-            <h1 className="bold">Showcasing My Coding Journey!</h1>
-            <ProjectDisplay/>
+            <h2 id="title">PROJECTS</h2>
+            <h1 id="subtitle" className="bold">Showcasing My Coding Journey!</h1>
+            <ProjectDisplay />
         </div>
-        <div id="block"/>
-            <h1>h2</h1>
-        <div id="block"/>
+        <div id="block" />
 
     </Main>
-    
+
 );
 
 export default Projects;

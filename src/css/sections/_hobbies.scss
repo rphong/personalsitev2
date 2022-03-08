@@ -18,40 +18,8 @@
         }
 
     }
-
-    h1{
-        position: relative;
-        &::before {
-            content: '';
-            position: absolute;
-            bottom: -5px; left: 0;
-            width: 100px;
-            height: 5px;
-            background-color: _palette(mainGreen);
-          }
-    }
-}
-
-.waveHobbies {
-    path{
-        fill: _palette(main);
-    }
-}
-
-#origamiGallery
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    border: 1px solid _palette(baseText);
-
-    padding: 1rem;
-    margin: 1rem 0;
-    img{
-        height: 7rem;
-        aspect-ratio: 1;
-        object-fit: cover;
+    #subtitle{
+        margin-bottom: 4rem;
     }
 }
 
@@ -62,11 +30,6 @@
             li{
                 font-size: .8rem;
             }
-        }
-    }
-    #origamiGallery{
-        img{
-            height: 5.5rem;
         }
     }
 };
@@ -81,9 +44,13 @@
             }
         }
     }
-    #origamiGallery{
-        img{
-            height: 4rem;
-        }
-    }
 };
+
+//
+//Cranes
+//
+
+.Crane1{
+    position: absolute;
+    right: 0;
+}

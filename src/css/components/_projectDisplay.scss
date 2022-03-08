@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
     
-    height: 350px;
+    height: 375px;
     width: 25vw;
     aspect-ratio: 1.75;
     position: relative;
@@ -148,10 +148,6 @@
             box-shadow:0 0 20px -7px _palette(shadow);
         }
     }
-};
-
-@media (max-width:_breakpoints(tablet)) {
-
 };
 
 @media (max-width:_breakpoints(mobileL)) {

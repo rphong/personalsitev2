@@ -17,7 +17,7 @@ const Hobbies = () => {
                 {isLaptop && <Crane className="Crane1" />}
 
                 <h2 id="title">HOBBIES</h2>
-                <h1 id="subtitle" className="bold">My Orgami Gallery!</h1>
+                <h1 id="subtitle" className="bold">My Origami Gallery!</h1>
                 <OrigamiDisplay mobile={isMobile} />
             </div>
         </Main>

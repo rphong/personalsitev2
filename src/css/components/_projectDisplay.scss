@@ -1,5 +1,6 @@
-#imgGallery{
+#projGallery{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     align-items: center;
     justify-content: space-around;
@@ -12,11 +13,12 @@
     align-items: center;
     justify-content: center;
     
-    height: 375px;
+    height: 400px;
     width: 25vw;
     aspect-ratio: 1.75;
     position: relative;
 
+    margin-bottom: 5rem;
     box-shadow:0 0 20px -10px _palette(shadow);
 
     //gradient bar bg under slide
@@ -72,11 +74,6 @@
 }
 
 
-#imgGallery img{
-    object-fit: cover;
-    height: inherit;
-    width: 100%;
-}
 
 //
 //Description
@@ -94,11 +91,25 @@
     opacity: 1;
     h2{
         text-align: center;
-        padding: 2rem 1rem 0 1rem;
+        padding: 2rem 1rem 0;
         font-weight: _font(weight-bold);
     }
     h3{
-        padding: 1rem 1rem 0 1rem;
+        padding: 1rem 1.5rem 0;
+    }
+}
+
+#blankProj{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    h2{
+        margin-top: -6rem;
+        color: #bbbbb7;
     }
 }
 
@@ -139,7 +150,7 @@
 //
 
 @media (max-width:_breakpoints(laptopS)) {
-    #imgGallery{
+    #projGallery{
         flex-direction: column;
 
         #singleSlide{
@@ -148,11 +159,14 @@
             box-shadow:0 0 20px -7px _palette(shadow);
         }
     }
+    .blank{
+        display: none !important;
+    }
 };
 
 @media (max-width:_breakpoints(mobileL)) {
 
-    #imgTitle{
+    #projTitle{
         height: 3rem;
         top: -2.9rem;
         h2{

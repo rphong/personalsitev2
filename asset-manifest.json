@@ -1,23 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.ad95c9af.css",
-    "main.js": "/static/js/main.fbf18fb3.js",
+    "main.css": "/static/css/main.7d9b528a.css",
+    "main.js": "/static/js/main.272245ae.js",
     "static/media/boxes.jpg": "/static/media/boxes.bc8ddf516b3a8b13dea3.jpg",
     "static/media/butterflies.jpg": "/static/media/butterflies.73e9282a674e056bdf47.jpg",
     "static/media/torus.jpg": "/static/media/torus.cc3839be06b46e97488e.jpg",
     "static/media/me.png": "/static/media/me.c6449fe44687139dd9ab.png",
     "static/media/hummingbird.jpg": "/static/media/hummingbird.eccc6fe1236980772d8d.jpg",
-    "static/media/leagueSite.png": "/static/media/leagueSite.971a7a2b3645f72074c6.png",
-    "static/media/NFTeach.png": "/static/media/NFTeach.e4443c0efa0619cdcc13.png",
     "static/media/RPhong Resume 2022.pdf": "/static/media/RPhong Resume 2022.1d26f8f9a27a7e619425.pdf",
-    "static/media/tetrisRemake.png": "/static/media/tetrisRemake.b0447b307ce5e74ac2ff.png",
     "static/media/origamiCrane.glb": "/static/media/origamiCrane.3449c7495dbc8b418e65.glb",
     "index.html": "/index.html",
-    "main.ad95c9af.css.map": "/static/css/main.ad95c9af.css.map",
-    "main.fbf18fb3.js.map": "/static/js/main.fbf18fb3.js.map"
+    "main.7d9b528a.css.map": "/static/css/main.7d9b528a.css.map",
+    "main.272245ae.js.map": "/static/js/main.272245ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad95c9af.css",
-    "static/js/main.fbf18fb3.js"
+    "static/css/main.7d9b528a.css",
+    "static/js/main.272245ae.js"
   ]
 }

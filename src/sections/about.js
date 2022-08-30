@@ -25,7 +25,6 @@ const About = () => (
             data-scroll-direction="horizontal"
             data-scroll-speed="3"
           >
-            👋
           </p>  
         </div>
         <Wave />

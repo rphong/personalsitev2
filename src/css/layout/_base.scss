@@ -91,6 +91,10 @@ html{
     }
 }
 
+#app{
+    perspective: 1px;
+}
+
 //prevent highlighting image
 img {
     @include no-select;

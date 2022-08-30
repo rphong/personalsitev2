@@ -8,12 +8,12 @@
     margin: 1rem 0;
 
     
-    #origamiImgContainer{
+    .origamiImgContainer{
         width: 30vw;
         height: 30vw;
         position: relative;
     }
-    #origamiImg{
+    .origamiImg{
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -22,7 +22,7 @@
         
         z-index: 10;
     }
-    #origamiImgBg{
+    .origamiImgBg{
         width: 100%;
         height: 100%;
         position: absolute;
@@ -42,11 +42,11 @@
 
     }
 
-    #singleSection{
+    .singleOrigSection{
         display: flex;
         align-items: center;
     }
-    #sectionDescription{
+    .sectionDescription{
         h2{
             text-decoration: underline _palette(mainBlue) 3px;
             text-decoration-skip-ink: none;
@@ -67,16 +67,16 @@
 
 
 @media (max-width:_breakpoints(tablet)) {
-    #singleSection{
+    .singleOrigSection{
         flex-direction: column;
         align-items: center;
 
-        #sectionDescription{
+        .sectionDescription{
             margin:1rem 0;
-            max-width: 70vw;
+            max-width: 70vw !important;
         }
 
-        #origamiImgContainer{
+        .origamiImgContainer{
             width: 40vw;
             height: 40vw;
             display: flex;
@@ -84,7 +84,7 @@
             justify-content: center;
         }
 
-        #origamiImgBg{
+        .origamiImgBg{
             align-self: center;
             left: 0; right: 0; 
             margin-left: auto; 

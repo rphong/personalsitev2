@@ -16,7 +16,6 @@ function App() {
         <Hobbies/>
         <Contact/>
     </Parallax>
-    
   );
 }
 

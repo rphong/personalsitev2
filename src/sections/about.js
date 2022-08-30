@@ -6,8 +6,8 @@ import Wave from '../components/Wave';
 
 const About = () => (
 
-    <Main style={{ margin: '0 0 0 0' }} id="about">
-        <div id="about" >
+    <Main style={{ margin: '0 0 0 0' }}>
+        <div id="about">
             <div id="imgMeContainer">
                 <img src={Me} alt="me" id="meImg"></img>
                 <div id="imgMeBg"></div>
@@ -18,6 +18,15 @@ const About = () => (
                 exploring CS related fields such as game development and competitive programming. Currently, I'm learning
                 web development along with a bit of 3d modeling!
             </h2>
+            <p
+            role="img"
+            aria-label=""
+            data-scroll
+            data-scroll-direction="horizontal"
+            data-scroll-speed="3"
+          >
+            👋
+          </p>  
         </div>
         <Wave />
     </Main>

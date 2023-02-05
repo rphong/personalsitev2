@@ -2,7 +2,7 @@ import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 
 import Main from '../template/Main';
-import OrigamiDisplay from '../components/origamiDisplay';
+import OrigamiDisplay from '../components/OrigamiDisplay';
 import Crane from '../components/Crane';
 
 

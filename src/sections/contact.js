@@ -2,7 +2,7 @@ import React from 'react'
 
 import Main from '../template/Main'
 
-import resume from '../resources/RPhong Resume 2022.pdf';
+import resume from '../resources/RPhongResume2023.pdf';
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { RiNewspaperLine } from "react-icons/ri";
 
